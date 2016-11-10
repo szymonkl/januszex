@@ -11,6 +11,7 @@ namespace JanuszSoftwareSolutions
         static void Main(string[] args)
         {
             Console.WriteLine("WPF taki fajny");
+            Console.WriteLine("Branch1");
             Console.ReadLine();
         }
     }
