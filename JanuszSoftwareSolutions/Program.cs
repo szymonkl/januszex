@@ -21,7 +21,8 @@ namespace JanuszSoftwareSolutions
             Karolek,
             Felek,
             Bazyl,
-            Julian
+            Julian,
+            PchlyJuliana
         }
 
         }
