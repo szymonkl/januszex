@@ -13,5 +13,17 @@ namespace JanuszSoftwareSolutions
             Console.WriteLine("WPF taki fajny");
             Console.ReadLine();
         }
+            public enum Dominiaki
+        {
+            Senior,
+            Dominiak,
+            Bastek,
+            Karolek,
+            Felek,
+            Bazyl,
+            Julian
+        }
+
+        }
     }
-}
+
