@@ -14,5 +14,18 @@ namespace JanuszSoftwareSolutions
             Console.WriteLine("Branch1 change");
             Console.ReadLine();
         }
+            public enum Dominiaki
+        {
+            Senior,
+            Dominiak,
+            Bastek,
+            Karolek,
+            Felek,
+            Bazyl,
+            Julian,
+            PchlyJuliana
+        }
+
+        }
     }
-}
+
