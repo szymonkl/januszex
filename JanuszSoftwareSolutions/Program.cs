@@ -6,22 +6,51 @@ namespace JanuszSoftwareSolutions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("WPF to gówno");
-            Console.WriteLine("Branch1 change3");
+            int count = 1000;
+            int i = 0;
+            double a = 3;
+            double b = 4;
+            while (i < count)
+            {
+
+                Swap(ref a, ref b);
+                i++;
+            }
+            Console.WriteLine(a);
             Console.ReadLine();
-        }
-            public enum Dominiaki
-        {
-            Senior,
-            Dominiak,
-            Bastek,
-            Karolek,
-            Felek,
-            Bazyl,
-            Julian,
-            PchlyJuliana
-        }
+
 
         }
+
+        private static void Swap(ref double a, ref double b)
+        {
+            double result = CalculateValue(a, b);
+            double border = CalculateBorder(a, b);
+            if (IsGreater(result))
+            {
+                a = border;
+            }
+            else
+            {
+                b = border;
+            }
+
+        }
+
+        private static double CalculateValue(double a, double b)
+        {
+            return (Math.Sin(a) + Math.Sin(b))/2;
+        }
+
+        private static double CalculateBorder(double a, double b)
+        {
+            return (a + b)/2;
+        }
+
+        private static bool IsGreater(double result)
+        {
+            return result > 0;
+        }
     }
+}
 
