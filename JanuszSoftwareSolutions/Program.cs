@@ -7,7 +7,7 @@ namespace JanuszSoftwareSolutions
         static void Main(string[] args)
         {
             Console.WriteLine("WPF to gówno");
-            Console.WriteLine("Branch change");
+            Console.WriteLine("Branch1 change3");
             Console.ReadLine();
         }
             public enum Dominiaki
