@@ -34,17 +34,46 @@ namespace JanuszSoftwareSolutions
 
         private static double CalculateValue(double a, double b)
         {
-            return (Math.Sin(a) + Math.Sin(b))/2;
+            return (Math.Sin(a) + Math.Sin(b)) / 2;
         }
 
         private static double CalculateBorder(double a, double b)
         {
-            return (a + b)/2;
+            return (a + b) / 2;
         }
 
         private static bool IsGreater(double result)
         {
             return result > 0;
+        }
+
+
+        public static double CalculatePi_SpecifiedPrecision(double leftBorder, double rightBorder, double precision)
+        {
+            double result = 5;
+            while (IsEqual(result, precision))
+            {
+                result = CalculateValue(leftBorder, rightBorder);
+                var border = CalculateBorder(leftBorder, rightBorder);
+                if (IsGreater(result))
+                {
+                    leftBorder = border;
+                }
+                else
+                {
+                    rightBorder = border;
+                }
+
+            }
+
+            return CalculateBorder(leftBorder, rightBorder);
+
+
+        }
+
+        private static bool IsEqual(double result, double precision)
+        {
+            return Math.Abs(result) > precision;
         }
     }
 }
